@@ -1,6 +1,4 @@
 # HEALTHCARE PERFORMANCE ANALYSIS
-
-
 ## Project Overview
 This Data analysis & Visualization project aims to provide insights into the Healthcare performance of several health facilities in the United States.
 
@@ -13,7 +11,7 @@ By analyzing and visualizing various parts of the healthcare data, I sought to i
 ## Table of Contents
 1. [Data Sources](#data-sources)
 2. [Tools](#tools)
-3. [Data Cleaning & Preparation](#data-cleaning-&-preparation)
+3. [Data Cleaning and Preparation](#data-cleaning-and-preparation)
 4. [Exploratory Data Analysis](#exploratory-data-analysis)
 5. [Data Visualizations](#data-visualizations)
 6. [Findings](#findings)
@@ -27,7 +25,7 @@ The primary dataset used for this analysis is the 'heathcare_dataset.csv' file, 
 - Microsoft SQL Server - Data Cleaning & Analysis
 - PowerBI - Data Visualizations
 
-### Data Cleaning & Preparation
+### Data Cleaning and Preparation
 In the initial data preparation phase, I performed the following tasks:
 1. Data loading & inspection.
 
@@ -98,7 +96,28 @@ EDA involved exploring the healthcare data to answer key questions, such as:
 3. Which doctors are preferred for specific conditions?
 4. What is the average billing amount by each insurance provider?
 
-![Healthacare EDA Execute SQL Capture](https://github.com/user-attachments/assets/d1dd7da1-0a1a-44ac-b94b-190f97f15c60)
+```sql
+--QUERIES FOR THE DATASET:
+--For the Gender and Medical Conditions:
+SELECT [Gender], [Medical Condition], COUNT(*) AS ConditionCount
+FROM Healthcare_Dataset
+GROUP BY [Gender], [Medical Condition]
+ORDER BY [Medical Condition] ASC
+
+--For the Medical Conditions Across Age Groups:
+SELECT [AgeGroup], [Medical Condition], COUNT(*) AS ConditionCount
+FROM Healthcare_Dataset
+GROUP BY [AgeGroup], [Medical Condition]
+ORDER BY ConditionCount DESC
+
+--For the Doctors Preferred for Specific Conditions:
+SELECT [Doctor], [Medical Condition], COUNT(*) AS PatientCount
+FROM Healthcare_Dataset
+GROUP BY [Doctor], [Medical Condition]
+HAVING COUNT(*) >= 5
+```
+
+![Healthacare EDA Execute SQL Capture2](https://github.com/user-attachments/assets/70801ed3-8fa6-46cb-b549-0d14365c1c8b)
 
 ### Data Visualizations
 The data visualization of the analyzed data is shown in the interactive Dashboard below:
