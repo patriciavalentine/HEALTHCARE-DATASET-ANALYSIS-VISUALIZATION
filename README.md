@@ -30,10 +30,66 @@ The primary dataset used for this analysis is the 'heathcare_dataset.csv' file, 
 ### Data Cleaning & Preparation
 In the initial data preparation phase, I performed the following tasks:
 1. Data loading & inspection.
+
+```sql
+SELECT *
+FROM Healthcare_Dataset
+
+SELECT TOP 10 *
+FROM Healthcare_Dataset
+-- Retrieved the first 10 rows
+
+SELECT COUNT(*)
+FROM Healthcare_Dataset
+-- Counted total rows
+```
+
 2. Checking missing values and blanks.
+```sql
+SELECT *
+FROM Healthcare_Dataset
+WHERE [Name] LIKE '% %'
+   OR [Name] IS NULL
+   OR [Name] = ''
+--Checked for Empty Values.
+
+DELETE FROM Healthcare_Dataset
+WHERE [Name] IS NULL
+```
+
 3. Data cleaning & formatting.
 
-![Healthcare Data Cleaning  SQL Capture](https://github.com/user-attachments/assets/522b67af-2d9c-45ef-9961-4066ada4f822)
+```sql
+ALTER TABLE Healthcare_Dataset
+DROP COLUMN [Room Number], [Test Results]
+--Deleted some Irrelevant Columns.
+
+
+UPDATE Healthcare_Dataset
+SET [Name] = UPPER([Name])
+--Formatted the patient Names into Uppercase; since most were not in a uniform format.
+
+UPDATE Healthcare_Dataset
+SET [Billing Amount] = ROUND([Billing Amount], 0)
+--Removed the several decimals by Converting Billing Amount to the nearest Whole Number.
+
+UPDATE Healthcare_Dataset
+SET [Name] = LTRIM(RTRIM([Name])),
+    [Doctor] = LTRIM(RTRIM([Doctor])),
+    [Hospital] = LTRIM(RTRIM([Hospital]))
+--Remove leading and trailing spaces from the columns.
+
+ALTER TABLE Healthcare_Dataset
+ADD AgeGroup VARCHAR(20)
+UPDATE Healthcare_Dataset
+SET AgeGroup = CASE
+    WHEN Age < 18 THEN 'Child'
+    WHEN Age BETWEEN 18 AND 35 THEN 'Young Adult'
+    WHEN Age BETWEEN 36 AND 55 THEN 'Adult'
+    ELSE 'Senior'
+END;
+--Added an extra column 'AgeGroup'; to help with further queries.
+```
 
 ### Exploratory Data Analysis
 EDA involved exploring the healthcare data to answer key questions, such as:
