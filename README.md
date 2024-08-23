@@ -87,7 +87,6 @@ The slight gender differences in condition prevalence, the favorable doctor-to-p
 
 These findings can inform strategic decisions in healthcare management and policy-making.
 
-**This comprehensive analysis process highlights my ability to effectively clean, prepare, and analyze complex datasets using SQL, and to translate these insights into meaningful visualizations using Power BI. By uncovering trends and relationships within the data, I demonstrated strong analytical skills and a deep understanding of healthcare data.**
+*This comprehensive analysis process highlights my ability to effectively clean, prepare, and analyze complex datasets using SQL, and to translate these insights into meaningful visualizations using Power BI.*
 
-*My approach to data analysis—ranging from identifying key patterns to generating actionable insights—exemplifies my readiness to take on challenging projects and deliver impactful results in any data-driven environment.*
 💙
