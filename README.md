@@ -20,6 +20,12 @@ The primary dataset used for this analysis is the ['heathcare_dataset.csv'](http
 
 I consolidated and presented several key insights in [this dashboard](https://github.com/patriciavalentine/HEALTHCARE-PERFORMANCE-ANALYSIS/blob/main/Dashboard%20Capture.PNG).
 
+## 📂 FILES
+1. [The Raw Data](https://github.com/patriciavalentine/HEALTHCARE-PERFORMANCE-ANALYSIS/blob/main/healthcare_dataset.csv)
+2. [The SQL Queries & Analysis](https://github.com/patriciavalentine/HEALTHCARE-PERFORMANCE-ANALYSIS/blob/main/Healthcare_Dataset%20Query.sql)
+3. [The PowerBI Visualizations](https://github.com/patriciavalentine/HEALTHCARE-PERFORMANCE-ANALYSIS/blob/main/Healthcare_Dataset%20Visualizations.pbix)
+4. [The Dashboard](https://github.com/patriciavalentine/HEALTHCARE-PERFORMANCE-ANALYSIS/blob/main/Dashboard%20Capture.PNG)
+
 ## THE PROCESS
 
 ![confident-doctor-hospital-room](https://github.com/user-attachments/assets/10f4356a-8b79-4157-8e07-26e61b84b111)
