@@ -1,29 +1,35 @@
-# HEALTHCARE PERFORMANCE ANALYSIS
+# 📊 HEALTHCARE PERFORMANCE ANALYSIS
 ## Project Overview
-This Data analysis & Visualization project aims to provide insights into the Healthcare performance of several health facilities in the United States.
+This Data Analysis & Visualization project aims to provide insights into the Healthcare performance of several health facilities in the United States.
+
+By analyzing and visualizing various parts of the healthcare data, I sought to identify trends and gain a deeper understanding of the healthcare performance by analysing information about the healthcare systems' patients' names, ages, genders, medical conditions, insurance providers, blood groups, billing amounts, doctors, days of admission and hospitals attended.
+
+### Data Source
+The primary dataset used for this analysis is the ['heathcare_dataset.csv'](https://github.com/patriciavalentine/HEALTHCARE-PERFORMANCE-ANALYSIS/blob/main/healthcare_dataset.csv) file, containing detailed information about the healthcare systems.
+
+### Tools
+- *Microsoft SQL Server - Data Cleaning & Analysis.*
+- *PowerBI - Data Visualizations.*
+
+## 📑 Insights
+- Asthma was more prevalent among males, while arthritis was more frequent among females.
+- The doctor-to-patient ratio was favorable, with a slightly higher number of doctors compared to patients.
+- There was a proportional distribution between the number of hospitals and patient count.
+- Seniors constituted the largest patient age group across most medical conditions, followed by adults, young adults, and children.
+- The average billing amount per insurance provider demonstrated significant variability, contingent on the medical condition.
+
+I consolidated and presented several key insights in [this dashboard](https://github.com/patriciavalentine/HEALTHCARE-PERFORMANCE-ANALYSIS/blob/main/Dashboard%20Capture.PNG).
+
+## THE PROCESS
 
 ![confident-doctor-hospital-room](https://github.com/user-attachments/assets/10f4356a-8b79-4157-8e07-26e61b84b111)
 
-By analyzing and visualizing various parts of the healthcare data, I sought to identify trends and gain a deeper understanding of the healthcare performance.
-
-![Healthcare Default Dashboard Capture](https://github.com/user-attachments/assets/24f1c773-6922-45ec-a378-78c4e2811a24)
-
 ## Table of Contents
-1. [Data Sources](#data-sources)
-2. [Tools](#tools)
-3. [Data Cleaning and Preparation](#data-cleaning-and-preparation)
-4. [Exploratory Data Analysis](#exploratory-data-analysis)
-5. [Data Visualizations](#data-visualizations)
-6. [Findings](#findings)
-7. [Conclusion](#conclusion) 
-
-### Data Sources
-Healthcare_Dataset:
-The primary dataset used for this analysis is the 'heathcare_dataset.csv' file, containing detailed information about the healthcare systems' patients' names, ages, genders, medical conditions, insurance providers, blood groups, billing amounts, doctors, days of admission and hospitals attended.
-
-### Tools
-- Microsoft SQL Server - Data Cleaning & Analysis
-- PowerBI - Data Visualizations
+1. [Data Cleaning and Preparation](#data-cleaning-and-preparation)
+2. [Exploratory Data Analysis](#exploratory-data-analysis)
+3. [Data Visualizations](#data-visualizations)
+4. [Findings](#findings)
+5. [Conclusion](#conclusion)
 
 ### Data Cleaning and Preparation
 In the initial data preparation phase, I performed the following tasks:
@@ -122,7 +128,9 @@ HAVING COUNT(*) >= 5
 ### Data Visualizations
 The data visualization of the analyzed data is shown in the interactive Dashboard below:
 
-![Healthcare PowerBi Viz Wholescreen Capture](https://github.com/user-attachments/assets/d47ed06f-1fec-42e8-952b-d1efa47cb2c1)
+![Healthcare Default Dashboard Capture](https://github.com/user-attachments/assets/24f1c773-6922-45ec-a378-78c4e2811a24)
+
+To filter and explore the dashboards from different perspectives, download the PowerBI visualization [here](https://github.com/patriciavalentine/HEALTHCARE-PERFORMANCE-ANALYSIS/blob/main/Healthcare_Dataset%20Visualizations.pbix).
 
 ### Findings
 1. Correlation Between Gender and Medical Conditions:
