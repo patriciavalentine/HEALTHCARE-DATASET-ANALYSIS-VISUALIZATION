@@ -7,6 +7,12 @@ By analyzing and visualizing various parts of the healthcare data, I sought to i
 ### Data Source
 The primary dataset used for this analysis is the ['heathcare_dataset.csv'](https://github.com/patriciavalentine/HEALTHCARE-PERFORMANCE-ANALYSIS/blob/main/healthcare_dataset.csv) file, containing detailed information about the healthcare systems.
 
+## 📂 FILES
+1. [The Raw Data](https://github.com/patriciavalentine/HEALTHCARE-PERFORMANCE-ANALYSIS/blob/main/healthcare_dataset.csv)
+2. [The SQL Queries & Analysis](https://github.com/patriciavalentine/HEALTHCARE-PERFORMANCE-ANALYSIS/blob/main/Healthcare_Dataset%20Query.sql)
+3. [The PowerBI Visualizations](https://github.com/patriciavalentine/HEALTHCARE-PERFORMANCE-ANALYSIS/blob/main/Healthcare_Dataset%20Visualizations.pbix)
+4. [The Dashboard](https://github.com/patriciavalentine/HEALTHCARE-PERFORMANCE-ANALYSIS/blob/main/Dashboard%20Capture.PNG)
+
 ### Tools
 - *Microsoft SQL Server - Data Cleaning & Analysis.*
 - *PowerBI - Data Visualizations.*
@@ -20,13 +26,11 @@ The primary dataset used for this analysis is the ['heathcare_dataset.csv'](http
 
 I consolidated and presented several key insights in [this dashboard](https://github.com/patriciavalentine/HEALTHCARE-PERFORMANCE-ANALYSIS/blob/main/Dashboard%20Capture.PNG).
 
-## 📂 FILES
-1. [The Raw Data](https://github.com/patriciavalentine/HEALTHCARE-PERFORMANCE-ANALYSIS/blob/main/healthcare_dataset.csv)
-2. [The SQL Queries & Analysis](https://github.com/patriciavalentine/HEALTHCARE-PERFORMANCE-ANALYSIS/blob/main/Healthcare_Dataset%20Query.sql)
-3. [The PowerBI Visualizations](https://github.com/patriciavalentine/HEALTHCARE-PERFORMANCE-ANALYSIS/blob/main/Healthcare_Dataset%20Visualizations.pbix)
-4. [The Dashboard](https://github.com/patriciavalentine/HEALTHCARE-PERFORMANCE-ANALYSIS/blob/main/Dashboard%20Capture.PNG)
+## Recommendations
+1. Prioritize Geriatric Care Services: With seniors being the largest patient group, healthcare facilities should focus on geriatric care by offering more specialized units, wellness programs, and preventive services for age-related conditions.
+2. Insurance Plan Optimization: The variance in billing amounts across providers highlights the need for better insurance management. Tailored plans should cover high-cost treatments effectively, reducing patient expenses and ensuring proper hospital reimbursement.
 
-## THE PROCESS
+# THE PROCESS
 
 ![confident-doctor-hospital-room](https://github.com/user-attachments/assets/10f4356a-8b79-4157-8e07-26e61b84b111)
 
